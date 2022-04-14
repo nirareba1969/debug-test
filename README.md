@@ -30,6 +30,13 @@ end
 ruby repro.rb
 ```
 
+### for Docker
+
+```
+docker build . -t debug-test
+docker run --rm -t debug-test
+```
+
 ## Expected Behavior
 
 ```

@@ -9,16 +9,25 @@
 
 ## Reproduction
 
-```
-docker build . -t debug-test
-docker run --rm -t debug-test
+### Script
+
+```ruby
+require "debug"
+
+DEBUGGER__::CONFIG[:fork_mode] = :parent
+
+fork do
+  puts 'parent forked.'
+  fork do
+    puts 'child forked.'
+  end
+end
 ```
 
-or 
+### Command
 
 ```
-bundle install
-bundle exec ruby repro.rb
+ruby repro.rb
 ```
 
 ## Expected Behavior

@@ -1,6 +1,6 @@
 ## Your environment
 
-- `ruby -v`: `ruby 3.1.0p0 (2021-12-25 revision fb4df44d16) [x86_64-darwin21]`
+- `ruby -v`: `ruby 3.1.0p0 (2021-12-25 revision fb4df44d16) [x86_64-linux]`
 - `rdbg -v`: `rdbg 1.5.0`
 
 ## Description

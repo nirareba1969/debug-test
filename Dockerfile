@@ -1,10 +1,9 @@
 FROM ruby:3.1.0
 
+RUN gem install debug -v 1.5.0
+
 RUN mkdir /app
-
 WORKDIR /app
-
 COPY . .
-RUN bundle install
 
-CMD ["bundle", "exec", "ruby", "repro.rb"]
+CMD ["ruby", "repro.rb"]
